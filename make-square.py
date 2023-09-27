@@ -38,7 +38,7 @@ def Reformat_Image_With_Ratio(desired_aspect_ratio):
             new_width = int(height * desired_aspect_ratio)
 
         # create a new blank image with the desired aspect ratio
-        background = Image.new('RGBA', (new_width, new_height), (255, 255, 255, 0))  # make Transparent background
+        background = Image.new('RGBA', (new_width, new_height), (255, 255, 255, 0))  # make transparent background
         offset = (int((new_width - width) / 2), int((new_height - height) / 2))
 
         # paste the original image onto the blank image
